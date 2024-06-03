@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map" />
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		
+		<!-- <script type="text/javascript" src="/cm/js/jquery-ui.min.js" /> -->
+		<!-- <script type="text/javascript" src="/cm/js/jquery.ui.touch-punch.min.js" /> -->
+		
+		<script lazy="false" type="text/javascript"><![CDATA[
+
+scwin.SORT = "item";
+
+scwin.onpageload = function() {
+	//$p.$('.item').attr("draggable", "true");
+
+	scwin.setSortable(); 
+
+    //scwin.trigger2_onclick();
+};
+
+//sortable 초기화 (셋팅) 
+scwin.setSortable = function() {
+    /*
+    //방식1
+    $( "#mf_grp_drag" ).sortable({
+        //items: '> li:not(.nosort)', 
+        //items: '> li:not(.'+scwin.SORT+')', 
+	    axis: 'y',  
+	    update: function(event, ui) {//변경사항이 발생한 경우
+            //console.log(event);
+            //console.log(ui);
+            scwin.chgSortable();       //sortable 변경사항 있을 경우 호출 (재배치된 목록 데이터 가공...)
+	    }
+    });
+    $( "#mf_grp_drag" ).disableSelection();     //selection 기능과 충돌방지?? (sortable 시 내부의 글자 선택 방지)
+    */
+
+        //방식2
+    $( "#mf_grp_drag" ).sortable({axis:'y'}).sortable("disable");		//sortable 초기화 
+    //$( "#mf_grp_drag" ).disableSelection();
+};
+
+
+//sortable 활성화 
+scwin.trigger1_onclick = function(e) {
+    /*
+    //방식1 
+    $( "#mf_grp_drag" ).sortable({
+        //items: '> li:not(.nosort)', 
+        //items: '> li:not(.'+scwin.SORT+')', 
+	    axis: 'y',  
+	    update: function(event, ui) {//변경사항이 발생한 경우
+            //console.log(event);
+            //console.log(ui);
+            scwin.chgSortable();       //sortable 변경사항 있을 경우 호출 (재배치된 목록 데이터 가공...)
+	    }
+    });
+    $( "#mf_grp_drag" ).sortable("enable");     //sortable 활성화 (사전에 미리 sortable 지정 한 후 활성화 여부 셋팅) 
+    */
+
+    //방식2 
+    $( "#mf_grp_drag" ).sortable("enable"); 
+    $( "#mf_grp_drag" ).disableSelection();     //text selection 방지 
+
+};
+
+//sortable 비활성화 
+scwin.trigger2_onclick = function(e) {
+    $( "#mf_grp_drag" ).sortable("disable");    //sortable 비활성화 (사전에 미리 sortable 지정 한 후 활성화 여부 셋팅) 
+    $( "#mf_grp_drag" ).enableSelection();     //text selection 방지해제  
+};
+
+scwin.trigger3_onclick = function(e) {
+    scwin.chgSortable();
+};
+
+//결과
+scwin.chgSortable = function() {
+    var listArr = [...document.querySelector('.list').children];
+    console.log(listArr);
+};
+
+
+scwin.btn_temp1_onclick = function(e) {
+    console.log("btn_temp1 click==", e);
+};
+
+scwin.btn_temp2_onclick = function(e) {
+    console.log("btn_temp2 click==", e);
+};
+
+scwin.btn_temp3_onclick = function(e) {
+    console.log("btn_temp3 click==", e);
+};
+
+scwin.btn_temp4_onclick = function(e) {
+    console.log("btn_temp4 click==", e);
+};
+
+
+
+
+]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+	
+		<xf:group id="grp_drag" class="list" tagname="" style="border: dashed;">
+		
+			<xf:group id="line1" tagname="" class="item" style="width: 330px;">
+				<w2:anchor id="" outerDiv="false" style="width: 100px;height: 43px;float: left;">
+					<xf:label><![CDATA[앵커1]]></xf:label>
+				</w2:anchor><w2:textbox style="width: 150px;height: 43px;float: left" id="" label="테스트1"></w2:textbox>
+				<xf:trigger type="button" id="btn_temp1" style="width: 80px;height: 43px;" ev:onclick="scwin.btn_temp1_onclick">
+					<xf:label><![CDATA[버튼1]]></xf:label>
+				</xf:trigger>				
+			</xf:group>
+			
+			<xf:group class="item" id="line2" tagname="" style="width: 330px;">
+				<w2:anchor id="" outerDiv="false" style="width: 100px;height: 43px;float: left;">
+					<xf:label><![CDATA[앵커2]]></xf:label>
+				</w2:anchor><w2:textbox id="" label="테스트2" style="width: 150px;height: 43px;float: left"></w2:textbox>
+				<xf:trigger id="btn_temp2" style="width: 80px;height: 43px;" type="button" ev:onclick="scwin.btn_temp2_onclick">
+					<xf:label><![CDATA[버튼2]]></xf:label>
+				</xf:trigger>				
+			</xf:group>
+			
+			<xf:group class="item" id="line3" tagname="" style="width: 330px;">
+				<w2:anchor id="" outerDiv="false" style="width: 100px;height: 43px;float: left;">
+					<xf:label><![CDATA[앵커3]]></xf:label>
+				</w2:anchor><w2:textbox id="" label="테스트3" style="width: 150px;height: 43px;float: left"></w2:textbox>
+				<xf:trigger id="btn_temp3" style="width: 80px;height: 43px;" type="button" ev:onclick="scwin.btn_temp3_onclick">
+					<xf:label><![CDATA[버튼3]]></xf:label>
+				</xf:trigger>				
+			</xf:group>
+			
+			<xf:group class="item" id="line4" tagname="" style="width: 330px;">
+				<w2:anchor id="" outerDiv="false" style="width: 100px;height: 43px;float: left;">
+					<xf:label><![CDATA[앵커4]]></xf:label>
+				</w2:anchor><w2:textbox id="" label="테스트4" style="width: 150px;height: 43px;float: left"></w2:textbox>
+				<xf:trigger id="btn_temp4" style="width: 80px;height: 43px;" type="button" ev:onclick="scwin.btn_temp4_onclick">
+					<xf:label><![CDATA[버튼4]]></xf:label>
+				</xf:trigger>				
+			</xf:group>
+			
+		</xf:group>
+		
+		<xf:group style="width:459px;height:200px;border:dashed;margin-top: 50px;" id="">
+			<xf:trigger type="button" id="trigger1" style="width: 80px;height: 23px;" ev:onclick="scwin.trigger1_onclick">
+				<xf:label><![CDATA[sortable 활성화]]></xf:label>
+			</xf:trigger>
+			<xf:trigger type="button" id="trigger2" style="width: 80px;height: 23px;" ev:onclick="scwin.trigger2_onclick">
+				<xf:label><![CDATA[방지]]></xf:label>
+			</xf:trigger>
+			<xf:trigger id="trigger3" style="width: 80px;height: 23px;" type="button" ev:onclick="scwin.trigger3_onclick">
+				<xf:label><![CDATA[결과]]></xf:label>
+			</xf:trigger>
+		</xf:group>
+	</body>
+</html>

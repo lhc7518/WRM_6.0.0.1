@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_screenName="메인" meta_vertical_guides="" meta_horizontal_guides="370">
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map">
+            	<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
+            		<w2:columnInfo>
+            			<w2:column id="col1" name="name1" dataType="text"></w2:column>
+            			<w2:column id="col2" name="item01" dataType="number"></w2:column>
+            			<w2:column id="col3" name="item02" dataType="number"></w2:column>
+            			<w2:column id="col4" name="item03" dataType="number"></w2:column>
+
+            		</w2:columnInfo>
+            		<w2:data use="true">
+            			<w2:row>
+            				<col1><![CDATA[item01]]></col1>
+            				<col2><![CDATA[30]]></col2>
+            				<col3><![CDATA[58]]></col3>
+            				<col4><![CDATA[80]]></col4>
+            			</w2:row>
+            			<w2:row>
+            				<col1><![CDATA[item02]]></col1>
+            				<col2><![CDATA[80]]></col2>
+            				<col3><![CDATA[34]]></col3>
+            				<col4><![CDATA[52]]></col4>
+            			</w2:row>
+            			<w2:row>
+            				<col1><![CDATA[item03]]></col1>
+            				<col2><![CDATA[50]]></col2>
+            				<col3><![CDATA[22]]></col3>
+            				<col4><![CDATA[78]]></col4>
+            			</w2:row>
+            			<w2:row>
+            				<col1><![CDATA[item04]]></col1>
+            				<col2><![CDATA[90]]></col2>
+            				<col4><![CDATA[40]]></col4>
+            				<col3><![CDATA[60]]></col3>
+            			</w2:row>
+            			<w2:row>
+            				<col1><![CDATA[item05]]></col1>
+            				<col2><![CDATA[78]]></col2>
+            				<col4><![CDATA[60]]></col4>
+            				<col3><![CDATA[16]]></col3>
+            			</w2:row>
+            		</w2:data>
+            	</w2:dataList>
+            </w2:dataCollection>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="wrm_main" id="" style="">
+    		<xf:group class="pgtbox" id="" style="">
+    			<w2:textbox class="pgt_tit" id="" label="Reports" style="" tagname=""></w2:textbox>
+    			<xf:group class="breadcrumb" id="" style="">
+    				<xf:group id="" style="" tagname="ul">
+    					<xf:group class="home" id="" style="" tagname="li">
+    						<w2:anchor id="" outerDiv="false" style="">
+    							<xf:label></xf:label>
+    						</w2:anchor>
+    					</xf:group>
+    					<xf:group id="" style="" tagname="li">
+    						<w2:anchor id="" outerDiv="false" style="">
+    							<xf:label><![CDATA[메인화면]]></xf:label>
+    						</w2:anchor>
+    					</xf:group>
+    					<xf:group id="" style="" tagname="li">
+    						<w2:span id="" label="Reports" style=""></w2:span>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    			<xf:trigger class="btn_fav" id="" style="" type="button">
+    				<xf:label></xf:label>
+    			</xf:trigger>
+    		</xf:group>
+    		<xf:group id="" style="" class="box_wrap">
+    			<xf:group id="" style="" class="item release">
+    				<xf:group class="titbox" id="" style="">
+    					<w2:textbox class="" id="" label="Release notes" style="" tagname="h3"></w2:textbox>
+    					<xf:group class="rt" id="" style="">
+    						<w2:anchor outerDiv="false" id="" style="" class="more">
+    							<xf:label><![CDATA[더보기]]></xf:label>
+    						</w2:anchor>
+    					</xf:group>
+    				</xf:group>
+
+    				<xf:group id="" style="" tagname="ul">
+    					<xf:group id="" style="" tagname="li" class="roundbox">
+    						<w2:textbox id="" label="W-Pack을 이용한 WFrame Scope&lt;br/&gt;처리 성능 개선 기능 적용!" style="" class="ver_desc"
+    							escape="false">
+    						</w2:textbox>
+    						<xf:group id="" class="ver_info">
+    							<w2:textbox style="" id="" label="2023.12.01" class="ver_date"></w2:textbox>
+    							<w2:textbox style="" id="" label="5.0.5.6" class="ver_num"></w2:textbox>
+    						</xf:group>
+    					</xf:group>
+    					<xf:group id="" style="" tagname="li" class="roundbox">
+    						<w2:textbox class="ver_desc" escape="false" id="" label="모바일 반응형 지원 고도화" style=""></w2:textbox>
+    						<xf:group id="" class="ver_info">
+    							<w2:textbox style="" id="" label="2023.12.01" class="ver_date"></w2:textbox>
+    							<w2:textbox style="" id="" label="5.0.5.6" class="ver_num"></w2:textbox>
+    						</xf:group>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    			<xf:group class="item engine" id="" style="">
+    				<xf:group class="titbox" id="" style="">
+    					<w2:textbox class="" id="" label="Engine Version" style="" tagname="h3"></w2:textbox>
+    				</xf:group>
+    				<xf:group id="" style="" class="conbox">
+    					<w2:textbox id="" label="WebSquare5&lt;br/&gt;&lt;b&gt;V.SP5&lt;/b&gt;" style="" escape="false" class="con_tit"></w2:textbox>
+    					<xf:group id="" class="updatebox">
+    						<w2:textbox style="" id="" label="업데이트 : 2023.12.01" tagname="p"></w2:textbox>
+    						<w2:textbox style="" id="" label="5.0_5.4982B.20230727.152939_1.8" tagname="p"></w2:textbox>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    			<xf:group class="item solution" id="" style="">
+    				<xf:group class="titbox" id="" style="">
+    					<w2:textbox class="" id="" label="Solution" style="" tagname="h3"></w2:textbox>
+    				</xf:group>
+    				<xf:group id="" class="conbox">
+    					<xf:group id="" class="titlebox">
+    						<w2:textbox style="" id="" label="WebSquare5" class="tit"></w2:textbox>
+    						<w2:textbox style="" id="" label="HTML5 Enterprise UI Platform" class="txt"></w2:textbox>
+    					</xf:group>
+    					<xf:group style="" id="" class="textbox">
+    						<w2:textbox style="" id="" label="국내 No.1 웹 표준 UI/UX 솔루션 리더" class="tit"></w2:textbox>
+    						<w2:textbox style="" id="" label="글로벌 웹 표준 HTML5 기술 적용과 파워풀한 성능,&lt;br/&gt;개발 생산성과 편의성을 향상시킨 차세대 UI 플랫폼"
+    							escape="false" class="txt">
+    						</w2:textbox>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    			<xf:group class="item weather" id="" style="">
+    				<xf:group class="titbox" id="" style="">
+    					<w2:textbox class="" id="" label="오늘의 날씨" style="" tagname="h3"></w2:textbox>
+    					<xf:group class="rt" id="" style="">
+    						<w2:textbox id="" label="2023.12.08. 16:41 업데이트" style=""></w2:textbox>
+    						<xf:trigger class="btn_cm refresh" id="" style="" type="button">
+    							<xf:label><![CDATA[새로고침]]></xf:label>
+    						</xf:trigger>
+
+    					</xf:group>
+    				</xf:group>
+    				<xf:group id="" style="" class="conbox">
+    					<xf:group id="" style="" class="visualbox">
+    						<xf:group id="" style="" class="weather_info">
+    							<w2:textbox id="" label="대체로 흐림" style="" class="txt"></w2:textbox>
+    							<xf:group id="" style="" class="iconbox">
+    								<xf:group id="" class="img_wrap">
+    									<xf:image src="/cm/images/product/ico_weather.png" style="" id=""></xf:image>
+    								</xf:group>
+    								<w2:textbox id="" label="10º" style=""></w2:textbox>
+
+    							</xf:group>
+
+    							<xf:group id="" class="textbox">
+
+    								<w2:span id="" label="최고 : 16º" style=""></w2:span>
+    								<w2:span id="" label="최저 : 04º" style=""></w2:span>
+    							</xf:group>
+    						</xf:group>
+    						<xf:group id="" class="location">
+    							<w2:anchor outerDiv="false" id="" style="">
+    								<xf:label><![CDATA[위치보기]]></xf:label>
+    							</w2:anchor>
+    							<w2:textbox style="" id="" label="서울특별시 마곡동" class=""></w2:textbox>
+
+    						</xf:group>
+    					</xf:group>
+    					<xf:group class="weather_graph" id="" style="" tagname="ul">
+    						<xf:group id="" style="" tagname="li" class="today">
+    							<w2:textbox id="" label="월" style="" class="week"></w2:textbox>
+    							<w2:textbox class="icon ico1" id="" label="비" style="" tagname="p"></w2:textbox>
+    							<xf:group id="" style="" class="temp">
+    								<w2:span label="17º" style="" id="" class="high"></w2:span>
+    								<w2:span id="" label="9º" style="" class="low"></w2:span>
+    							</xf:group>
+    						</xf:group>
+    						<xf:group id="" style="" tagname="li">
+    							<w2:textbox class="week" id="" label="화" style=""></w2:textbox>
+    							<w2:textbox class="icon ico1" id="" label="비" style="" tagname="p"></w2:textbox>
+    							<xf:group class="temp" id="" style="">
+    								<w2:span class="high" id="" label="17º" style=""></w2:span>
+    								<w2:span class="low" id="" label="9º" style=""></w2:span>
+    							</xf:group>
+    						</xf:group>
+    						<xf:group id="" style="" tagname="li">
+    							<w2:textbox class="week" id="" label="수" style=""></w2:textbox>
+    							<w2:textbox class="icon ico2" id="" label="대체로 흐림" style="" tagname="p"></w2:textbox>
+    							<xf:group class="temp" id="" style="">
+    								<w2:span class="high" id="" label="17º" style=""></w2:span>
+    								<w2:span class="low" id="" label="10º" style=""></w2:span>
+    							</xf:group>
+    						</xf:group>
+    						<xf:group id="" style="" tagname="li">
+    							<w2:textbox class="week" id="" label="목" style=""></w2:textbox>
+    							<w2:textbox class="icon ico1" id="" label="비" style="" tagname="p"></w2:textbox>
+    							<xf:group class="temp" id="" style="">
+    								<w2:span class="high" id="" label="11º" style=""></w2:span>
+    								<w2:span class="low" id="" label="-4º" style=""></w2:span>
+    							</xf:group>
+    						</xf:group>
+    						<xf:group id="" style="" tagname="li">
+    							<w2:textbox class="week" id="" label="금" style=""></w2:textbox>
+    							<w2:textbox class="icon ico1" id="" label="비" style="" tagname="p"></w2:textbox>
+    							<xf:group class="temp" id="" style="">
+    								<w2:span class="high" id="" label="17º" style=""></w2:span>
+    								<w2:span class="low" id="" label="9º" style=""></w2:span>
+    							</xf:group>
+    						</xf:group>
+    						<xf:group id="" style="" tagname="li">
+    							<w2:textbox class="week" id="" label="토" style=""></w2:textbox>
+    							<w2:textbox class="icon ico1" id="" label="비" style="" tagname="p"></w2:textbox>
+    							<xf:group class="temp" id="" style="">
+    								<w2:span class="high" id="" label="17º" style=""></w2:span>
+    								<w2:span class="low" id="" label="9º" style=""></w2:span>
+    							</xf:group>
+    						</xf:group>
+    						<xf:group id="" style="" tagname="li">
+    							<w2:textbox class="week" id="" label="일" style=""></w2:textbox>
+    							<w2:textbox class="icon ico3" id="" label="대체로 흐리고 비" style="" tagname="p"></w2:textbox>
+    							<xf:group class="temp" id="" style="">
+    								<w2:span class="high" id="" label="7º" style=""></w2:span>
+    								<w2:span class="low" id="" label="9º" style=""></w2:span>
+    							</xf:group>
+    						</xf:group>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    			<xf:group class="item chart" id="" style="">
+    				<xf:group class="titbox" id="" style="">
+    					<w2:textbox class="" id="" label="당월 실적 조회" style="" tagname="h3"></w2:textbox>
+    					<xf:group class="rt" id="" style="">
+    						<xf:select1 allOption="" appearance="minimal" chooseOption="" class="" direction="auto" disabled="false"
+    							disabledClass="w2selectbox_disabled" id="" ref="" renderType="" style="" submenuSize="auto">
+    							<xf:choices>
+    								<xf:item>
+    									<xf:label><![CDATA[2023년 12월]]></xf:label>
+    									<xf:value><![CDATA[]]></xf:value>
+    								</xf:item>
+    								<xf:item>
+    									<xf:label><![CDATA[2024년 1월]]></xf:label>
+    									<xf:value><![CDATA[]]></xf:value>
+    								</xf:item>
+    							</xf:choices>
+    						</xf:select1>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group id="" style="" class="chartbox">
+    					<w2:fusionchart drawType="javascript" runflashAt="IE6,IE7,IE8" seriesType="advanced" chartType="MSLine"
+    						style="width:100%;height:100%" id="" plotColor="#00DED8,#3FA9F5,#006FDF" ref="data:dataList1">
+    					</w2:fusionchart>
+    				</xf:group>
+    			</xf:group>
+    			<xf:group class="item notice" id="" style="">
+    				<xf:group class="tbcbox" id="" style="">
+    					<w2:tabControl alwaysDraw="false" class="tbc" confirmFalseAction="new" confirmTrueAction="exist" id="" style=""
+    						tabScroll="" useConfirmMessage="false" useMoveNextTabFocus="false" useTabKeyOnly="true">
+    						<w2:tabs disabled="false" id="tabs1" label="공지사항" style=""></w2:tabs>
+    						<w2:tabs disabled="false" id="tabs2" label="알림" style=""></w2:tabs>
+    						<w2:content alwaysDraw="false" id="content1" style="">
+    							<xf:group id="" class="roundbox">
+    								<w2:textbox style="" id="" label="NEW" class="ico_new"></w2:textbox>
+    								<w2:textbox id="" label="[인사발령] 2023년 8월 조직개편 공지" style="" class="new_txt"></w2:textbox>
+    							</xf:group>
+    							<xf:group id="" style="" tagname="ul" class="notice_list">
+    								<xf:group id="" style="" tagname="li">
+
+
+    									<xf:group id="" style="" tagname="a">
+    										<w2:textbox id="" label="[전사공지] 전사 워크샵 안내" style="" class="txt" tagname="span"></w2:textbox>
+    										<w2:textbox id="" label="23.01.01" style="" class="date" tagname="span"></w2:textbox>
+    									</xf:group>
+    								</xf:group>
+    								<xf:group id="" style="" tagname="li">
+
+
+    									<xf:group id="" style="" tagname="a">
+    										<w2:textbox id="" label="[전사공지] 건강검진 실시 일정" style="" class="txt" tagname="span"></w2:textbox>
+    										<w2:textbox id="" label="23.01.01" style="" class="date" tagname="span"></w2:textbox>
+    									</xf:group>
+    								</xf:group>
+    								<xf:group id="" style="" tagname="li">
+    									<xf:group id="" style="" tagname="a">
+    										<w2:textbox class="txt" id="" label="[전사공지] 건강검진 실시 일정" style="" tagname="span"></w2:textbox>
+    										<w2:textbox class="date" id="" label="23.01.01" style="" tagname="span"></w2:textbox>
+    									</xf:group>
+    								</xf:group>
+    								<xf:group id="" style="" tagname="li">
+    									<xf:group id="" style="" tagname="a">
+    										<w2:textbox class="txt" id="" label="[전사공지] 건강검진 실시 일정" style="" tagname="span"></w2:textbox>
+    										<w2:textbox class="date" id="" label="23.01.01" style="" tagname="span"></w2:textbox>
+    									</xf:group>
+    								</xf:group>
+    							</xf:group>
+
+    						</w2:content>
+    						<w2:content alwaysDraw="false" id="content2" style=""></w2:content>
+    					</w2:tabControl>
+    				</xf:group>
+    				<w2:anchor outerDiv="false" id="" style="" class="more">
+    					<xf:label><![CDATA[더보기]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    			<xf:group class="item system" id="" style="">
+    				<xf:group class="titbox" id="" style="">
+    					<w2:textbox class="" id="" label="시스템 정보" style="" tagname="h3"></w2:textbox>
+    					<w2:textbox id="" label="Tab View : &lt;b&gt;1024 X N/A&lt;/b&gt; (가로 1024 미만은 적응형)" style="" escape="false"></w2:textbox>
+    				</xf:group>
+    				<xf:group id="" style="" tagname="ul">
+    					<xf:group id="" style="" tagname="li" class="chrome roundbox">
+    						<w2:textbox id="" label="Chrome" style=""></w2:textbox>
+    					</xf:group>
+    					<xf:group id="" style="" tagname="li" class="firefox roundbox">
+    						<w2:textbox id="" label="FireFox" style=""></w2:textbox>
+    					</xf:group>
+    					<xf:group class="safari roundbox" id="" style="" tagname="li">
+    						<w2:textbox id="" label="Safari" style="" class=""></w2:textbox>
+    					</xf:group>
+    					<xf:group class="opera roundbox" id="" style="" tagname="li">
+    						<w2:textbox class="" id="" label="Opera" style=""></w2:textbox>
+    					</xf:group>
+    					<xf:group class="ie roundbox" id="" style="" tagname="li">
+    						<w2:textbox class="" id="" label="IE9 이상" style=""></w2:textbox>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    	</xf:group>
+
+    </body>
+</html>
